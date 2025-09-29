@@ -1,9 +1,8 @@
-# Sep in print function
-name = input("What's your name? ")
-print("Hello,", name, sep=" ")
+class MySequence:
+    def __len__(self):
+        return 3
+    def __getitem__(self, index):
+        return index * 2
 
-# Parameters
-print(f"Hello, {name}")
-
-# ""
-print("Hello, \"Hania\"")
+for x in MySequence():  
+    print(x)
